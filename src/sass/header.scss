@@ -23,7 +23,7 @@
     height: 376px;
     // left: 35%;
     top: 216px;
-    outline: 2px solid goldenrod; 
+    // outline: 2px solid goldenrod; 
     z-index: 20;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
       background-image: url(../images/girl_left_1.png);
       background-size: cover;
       z-index: 2;
-      outline: 2px solid red;
+      // outline: 2px solid red;
 
       @media (max-width: 768px) {
         width: 314px;
@@ -68,7 +68,7 @@
       right: 0px;
       top: 10px;
       z-index: 1;
-      outline: 2px solid red;
+      // outline: 2px solid red;
 
       @media (max-width: 768px) {
         width: 314px;
