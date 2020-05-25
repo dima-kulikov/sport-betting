@@ -1,0 +1,79 @@
+/* ДОБАВИЛ НОВОЕ------------- */
+// overflow: hidden;
+
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 248px;
+  background-image: url(../images/bg-2.png); 
+
+}
+.second__block{
+display: flex;
+  max-width: 1216;
+  /* height: 192px; */
+}
+.second__block__info{
+  width: 280px;
+  height: 192px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* outline: 2px solid red; */
+}
+.diamond{
+  background-image: url(../images/1.png);
+
+}
+.champion{
+  background-image: url(../images/2.png);
+}
+.bag{
+  background-image: url(../images/3.png);
+}
+.label{
+  background-image: url(../images/4.png);
+}
+@media (max-width: 1140px) {
+  .second {
+    height: 512px;
+  }
+
+  .second__block {
+    display: flex;
+    width: 560px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* outline: 2px solid gold; */
+
+  }
+  .second__block__info{
+    width: 232px;
+    margin: 20px;
+  }
+
+  .diamond{
+    order: 2;
+  }
+  .champion{
+    order: 4;
+  }
+  .bag{
+    order: 3;
+  }
+  .label{
+    order: 1;
+  }
+  
+  }
+  @media (max-width: 550px) {
+    .second {
+      height: 1000px;
+      background-repeat-y: repeat;
+    }
+    .second__block {
+justify-content: center;
+    }
+  }
