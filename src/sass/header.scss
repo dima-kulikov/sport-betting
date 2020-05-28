@@ -96,10 +96,10 @@
 }
 
 .header__btn{
-  position: absolute;
+  // position: absolute;
   width: 385px;
   height: 88px;
-  bottom: 0px;
+  // bottom: 0px;
   background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -109,6 +109,7 @@
   font-size: 36px;
   letter-spacing: 1.35px;
   color: #FFFFFF;
+  margin: 0px auto;
 }
 
 .header__form input[type="name"]{
