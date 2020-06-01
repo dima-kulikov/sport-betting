@@ -1,40 +1,34 @@
 .bonus {
   overflow: auto;
-    width: 100%;
-    // height: 552px;
-    background-image: url(../images/bonus-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;  
+  width: 100%;
+  background-image: url(../images/bonus-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-  }
+.bonus__center {
+  margin: 0px auto;
+  width: 534.8px; }
 
-  .bonus__center{
-    margin: 0px auto;
-    width: 534.8px;
-  }
-  .bonus__center__activate{
+.bonus__center__activate {
   width: 455px;
   height: 92px;
   outline: 1px solid red;
   background-image: url(../images/bonus.png);
   background-position: center;
   background-repeat: no-repeat;
-  margin: 41px auto 19px auto;
-  }
+  margin: 41px auto 19px auto; }
 
-  .bonus__center__arrow{
-    width: 86px;
-    height: 48px;
-    background-image: url(../images/arrow.png);
-    margin: 0px auto;
-  }
-  .bonus__center__usd{
-    width: 534.8px;
-    height: 182px;
-    background-image: url(../images/100-usd.png);
-  }
+.bonus__center__arrow {
+  width: 86px;
+  height: 48px;
+  background-image: url(../images/arrow.png);
+  margin: 0px auto; }
 
-  .header__btn__margin{
-    margin: 36px auto 55.9px auto;
-  }
+.bonus__center__usd {
+  width: 534.8px;
+  height: 182px;
+  background-image: url(../images/100-usd.png); }
+
+.header__btn__margin {
+  margin: 36px auto 55.9px auto; }
