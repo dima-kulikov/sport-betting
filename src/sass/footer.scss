@@ -26,19 +26,27 @@
 
 footer {
     width: 100%;
-    height: 376px;
+    // height: 376px;
     background-color: #000D21; 
+    overflow: hidden;
   .footer {
-      margin: 0px auto;
+      margin: 32px auto;
       max-width: 1216px;
-      
-      outline: 1px solid red; 
+      // outline: 1px solid red; 
       display: flex;
       justify-content: space-between;
+      border-top: 1px solid #423A4D;
+    border-bottom: 1px solid #423A4D;
+    padding: 20px 0px;
 
       @media (max-width: 1140px) {
         flex-direction: column;
         width: 496px;
+        justify-content: space-between;
+      }
+      @media (max-width: 520px) {
+        flex-direction: column;
+        width: 272px;
         justify-content: space-between;
       }
 
@@ -55,7 +63,7 @@ footer {
        width: 100%;
       }
       @media (max-width: 520px) {
-        width: 227px;
+        width: 100%;
         height: 83px;
        }
 }
@@ -105,6 +113,9 @@ footer {
         .foto-9{
           background-image: url(../images/customers/customer-9.png);
         }
+
+
+
   
         .footer__games{
           flex-direction: column;
@@ -119,6 +130,13 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 24px;
+           }
+           @media (max-width: 520px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 16px;
            }
 
         .footer__games__size{
@@ -145,5 +163,26 @@ footer {
           background-image: url(../images/casino-1.png);
         }
       }
+    }
+    .footer__text{
+      max-width: 1216px;
+      margin: 24px auto;
+      font-family: Noto Sans Arabic;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.4px;
+      color: #CCCCCC;
+
+      @media (max-width: 1140px) {
+        max-width: 768px; 
+        padding: 0px 48px;
+        }
+        @media (max-width: 520px){
+          width: 271px;
+          padding: 0px 25px;
+        
+        }
     }
   }
