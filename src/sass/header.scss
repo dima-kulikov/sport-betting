@@ -1,10 +1,15 @@
 .header{
   width: 100%;
   height: 666px;  
-  background-image: url(../images/bg.jpg);  
+  background-image: url(../images/bg.jpg); 
+  background-position: center; 
   background-size: cover;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 620px) {
+    height: 933px;
+  }
 
   .logo{
     position: absolute;
@@ -18,8 +23,12 @@
     right: 0;
 
     @media (max-width: 800px) {
-      top: 35px;
+       top: 40px
     }
+    @media (max-width: 800px) {
+      top: -250px
+   }
+
   }
 
   .header__form{
@@ -27,7 +36,7 @@
     width: 400px;
     height: 376px;
     // left: 35%;
-    top: 216px;
+    bottom: 53px;
     // outline: 2px solid goldenrod; 
     z-index: 20;
     display: flex;
@@ -36,7 +45,11 @@
     left: 0;
     right: 0;
     @media (max-width: 800px) {
-      top: 180px;
+      bottom: 90px;
+      // width: auto;
+    }
+    @media (max-width: 620px) {
+      bottom: 30px;
     }
   } 
 
@@ -47,6 +60,13 @@
     height: 644px;
     // outline: 2px solid red;
     bottom: -20px;
+    @media (max-width: 800px) {
+     
+      position: relative;
+    }
+    @media (max-width: 620px) {
+      bottom: -287px;
+    }
 
     .header__piple__girl-1{
       position: absolute;
@@ -55,18 +75,17 @@
       background-image: url(../images/girl_left_1.png);
       background-size: cover;
       z-index: 2;
-      bottom: 0px;
-      // outline: 2px solid red;
+      bottom: -1px;
 
       @media (max-width: 800px) {
         width: 314px;
         height: 576px;
         left: -85px;
       }
-      @media (max-width: 400px) {
+      @media (max-width: 620px) {
         width: 415.29px;
         height: 768px;
-        left: -50px;
+        left: -120px;
       }
     }
 
@@ -78,18 +97,18 @@
       background-size: cover;
       right: 0px;
       z-index: 1;
-      bottom: 0px;
-      // outline: 2px solid red;
+      bottom: -1px;
 
       @media (max-width: 800px) {
         width: 314px;
         height: 560px;
         right: -86px;
       }
-      @media (max-width: 400px) {
+
+      @media (max-width: 620px) {
         width: 484.15px;
-        height: 764.65px;
-        left: -50px;
+        height: 768px;
+        right: -215px;
       }
     }
   }
@@ -110,6 +129,10 @@
   letter-spacing: 1.35px;
   color: #FFFFFF;
   margin: 0px auto;
+
+  @media (max-width: 620px) {
+    width: 272px;
+  }
 }
 
 .header__form input[type="name"]{
@@ -120,6 +143,9 @@
   box-sizing: border-box;
   box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
+  @media (max-width: 620px) {
+    width: 272px;
+  }
 }
 
 .header__form input[type="tel"]{
@@ -130,7 +156,22 @@
   box-sizing: border-box;
   box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
+
+  @media (max-width: 620px) {
+    width: 272px;
+  }
 }
+
+.header__form input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+
+  @media (max-width: 620px) {
+    width: 272px;
+  }
+}
+
 
 .text-first{
   font-family: Noto Sans Arabic;
@@ -145,7 +186,7 @@
 }
 
 .checkbox-text{
-  margin: 10px;
+  margin: 16px auto 47px auto;
   text-align: right;
   font-family: Noto Sans Arabic;
   font-style: normal;
@@ -154,3 +195,4 @@
   line-height: 16px;
   color: #FFFFFF;
 }
+ 
