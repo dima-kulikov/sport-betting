@@ -17,7 +17,18 @@
   background-image: url(../images/bonus.png);
   background-position: center;
   background-repeat: no-repeat;
-  margin: 41px auto 19px auto; }
+  margin: 41px auto 19px auto;
+
+
+  // @media (max-width: 800px) {
+   
+  //   // width: auto;
+  //    bottom: 90px;
+  }
+  @media (max-width: 620px) {
+    width: 280px;
+  }
+}
 
 .bonus__center__arrow {
   width: 86px;
