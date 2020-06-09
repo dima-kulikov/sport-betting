@@ -8,3 +8,7 @@
 @import 'second.scss';
 @import 'bonus.scss';
 @import 'footer.scss';
+
+input::placeholder {
+    color: #fff
+}

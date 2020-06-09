@@ -56,17 +56,23 @@
     }
 
   } 
-  .teni{
-    position: absolute;
-width: 299px;
-height: 340px;
-left: 10px;
-top: 472px;
 
-background: rgba(0, 8, 28, 0.8);
-filter: blur(60px);
-border-radius: 64px;
-z-index: 0;
+  form{
+    z-index: 2;
+  }
+  .teni{
+
+    width: 299px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 8, 28, 0.8);
+    filter: blur(60px);
+    border-radius: 64px;
+    z-index: 1;
+    @media (max-width: 620px) {
+      position: absolute;
+    }
   }
 
   .header__piple{
@@ -91,7 +97,7 @@ z-index: 0;
       background-image: url(../images/girl_left_1.png);
       background-size: cover;
       z-index: 2;
-      bottom: -1px;
+      bottom: -2px;
 
       @media (max-width: 800px) {
         width: 314px;
@@ -113,7 +119,7 @@ z-index: 0;
       background-size: cover;
       right: 0px;
       z-index: 1;
-      bottom: -1px;
+      bottom: -2px;
 
       @media (max-width: 800px) {
         width: 314px;
@@ -131,10 +137,9 @@ z-index: 0;
 }
 
 .header__btn{
-  // position: absolute;
+  display: block;
   width: 385px;
   height: 88px;
-  // bottom: 0px;
   background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -165,6 +170,8 @@ z-index: 0;
   border-radius: 8px;
   text-align: right;
   padding-right: 24px;
+  margin: auto;
+  display: block;
 
   @media (max-width: 620px) {
     width: 272px;
@@ -182,6 +189,8 @@ z-index: 0;
   font-size: 20px;
   text-align: right;
   padding-right: 24px;
+  margin: auto;
+  display: block;
 
   @media (max-width: 620px) {
     width: 272px;
@@ -220,5 +229,8 @@ z-index: 0;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  @media (max-width: 620px) {
+    text-align: center;
+  }
 }
  
