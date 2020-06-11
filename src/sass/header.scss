@@ -2,7 +2,7 @@
   width: 100%;
   height: 666px;  
   background-image: url(../images/bg.jpg); 
-  background-position: right; 
+  background-position: center; 
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -98,6 +98,7 @@
       background-size: cover;
       z-index: 2;
       bottom: -2px;
+      left: 40px;
 
       @media (max-width: 800px) {
         width: 314px;
@@ -117,7 +118,7 @@
       height: 633px;
       background-image: url(../images/girl_right_1.png);
       background-size: cover;
-      right: 0px;
+      right: -40px;
       z-index: 1;
       bottom: -2px;
 
@@ -141,10 +142,9 @@
     z-index: 1;
     background-image: url(../images/elements-bg.png);
     margin: auto;
-    left: 62px;
+    left: 0px;
+    right: -60px;
     top: 50px;
-    right: 0;
-    top: 38px;
     background-position: center;
   }
 }
