@@ -13,7 +13,7 @@
       // animation: rotate 5s infinite linear;
       // -webkit-animation: rotate 5s infinite linear;
       transform: rotate(19deg);
-      transition: 5s;
+      transition: 6s;
       // animation: translating 4s linear infinite;
 
 
@@ -22,21 +22,21 @@
       // animation: rotate 5s infinite linear;
       // -webkit-animation: rotate 5s infinite linear;
       transform: rotate(30deg);
-      transition: 5s;
+      transition: 6s;
  
     }
     &:hover .bonus_elements-3{
       // animation: rotate 5s infinite linear;
       // -webkit-animation: rotate 5s infinite linear;
       transform: rotate(15deg);
-      transition: 5s;
+      transition: 6s;
 
     }
     &:hover .bonus_elements-4{
       // animation: rotate 5s infinite linear;
       // -webkit-animation: rotate 5s infinite linear;
       transform: rotate(20deg);
-      transition: 5s;
+      transition: 6s;
 
     }
     // @keyframes translating {
@@ -67,25 +67,25 @@
   .bonus_elements-1{
     left: 142px;
     top: 121px;
-    transition: 5s;
+    transition: 6s;
   }
 
   .bonus_elements-2{
     left: 280px;
     top: 50px;
-    transition: 5s;
+    transition: 6s;
   }
       
   .bonus_elements-3{
     top: 60px;
     right: 226px;
-    transition: 5s;
+    transition: 6s;
   }
 
   .bonus_elements-4{
     right: -40px;
     bottom: 25px;
-    transition: 5s;
+    transition: 6s;
 }
   }
   
