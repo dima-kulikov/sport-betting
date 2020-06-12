@@ -1,69 +1,95 @@
 .bonus {
-  overflow: auto;
   width: 100%;
   background-image: url(../images/bonus-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
   position: relative;
+  overflow: hidden;
 
   
 
     &:hover .bonus_elements-1{
-      animation: rotate 5s infinite linear;
-      -webkit-animation: rotate 5s infinite linear;
+      // animation: rotate 5s infinite linear;
+      // -webkit-animation: rotate 5s infinite linear;
       transform: rotate(19deg);
-      // transform: rotate(-19deg);
       transition: 5s;
-      animation-iteration-count:infinite;
-    }
+      // animation: translating 4s linear infinite;
 
+
+    }
+    &:hover .bonus_elements-2{
+      // animation: rotate 5s infinite linear;
+      // -webkit-animation: rotate 5s infinite linear;
+      transform: rotate(30deg);
+      transition: 5s;
+ 
+    }
+    &:hover .bonus_elements-3{
+      // animation: rotate 5s infinite linear;
+      // -webkit-animation: rotate 5s infinite linear;
+      transform: rotate(15deg);
+      transition: 5s;
+
+    }
+    &:hover .bonus_elements-4{
+      // animation: rotate 5s infinite linear;
+      // -webkit-animation: rotate 5s infinite linear;
+      transform: rotate(20deg);
+      transition: 5s;
+
+    }
+    // @keyframes translating {
+    //   0%  { transform: translate(0, 0);}
+    //   25% { transform: translate(240px, 0);}
+    //   50% { transform: translate(240px, 140px);}
+    //   75% { transform: translate(0, 140px);}
+    //   100%{ transform: translate(0, 0);}
+    // }
   .bonus_elements{
-    max-width: 1754px;
-    height: 80%;
+    width: 1754px;
+    height: 100%;
     position: absolute;
     z-index: 1;
-    margin: auto;
-    left: 0px;
-    right: 0px;
-    top: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   
 
   .parametrs{
     position: absolute;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+    // width: 300px;
+    // height: 200px;
     
   }
   .bonus_elements-1{
-    background-image: url(../images/elements-bg-1.png);
-    left: 105px;
+    left: 142px;
     top: 121px;
-    // width: 332px;
-    // height: 231px;
-    }
-    // .bonus_elements-2{
-    //   background-image: url(../images/elements-bg-2.png);
-    //   left: 105px;
-    //   top: 121px;
-    //   width: 306px;
-    //   height: 477px;
-    //   }
-      
-    //   .bonus_elements-3{
-    //     background-image: url(../images/elements-bg-3.png);
-    //     left: 105px;
-    //     top: 121px;
-    //     }
-    //     .bonus_elements-4{
-    //       background-image: url(../images/elements-bg-4.png);
-    //       left: 105px;
-    //       top: 121px;
-    //       }
-  
+    transition: 5s;
   }
+
+  .bonus_elements-2{
+    left: 280px;
+    top: 50px;
+    transition: 5s;
+  }
+      
+  .bonus_elements-3{
+    top: 60px;
+    right: 226px;
+    transition: 5s;
+  }
+
+  .bonus_elements-4{
+    right: -40px;
+    bottom: 25px;
+    transition: 5s;
+}
+  }
+  
+  
   .bonus__center {
     margin: 0px auto;
     max-width: 534.8px; 
