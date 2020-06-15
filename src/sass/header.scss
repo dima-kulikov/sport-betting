@@ -200,7 +200,7 @@
 }
 
 .header__form input[type="tel"]{
-  width: 384px;
+  width: 219px;
   height: 64px;
   background: #09223F;
   border: 2px solid #366799;
@@ -211,13 +211,35 @@
   text-align: right;
   padding-right: 24px;
   margin: auto;
-  display: block;
+  display: inline-block;
 
   @media (max-width: 620px) {
     width: 272px;
   }
 }
 
+.header__form input[type="number"]{
+  width: 157px;
+  height: 64px;
+  background: #09223F;
+  border: 2px solid #366799;
+  box-sizing: border-box;
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 24px;
+  margin: auto;
+  display: inline-block;
+
+  @media (max-width: 620px) {
+    width: 272px;
+  }
+}
+.header__form input[type="number"]::after{
+  content: "¶";
+
+}
 .header__form input[type="checkbox"]{
   width: 16px;
   height: 16px;
@@ -256,4 +278,16 @@
 
 
 }
- 
+
+select{
+  width: 100px;
+  height: 100px;
+}
+
+.kiev:after{
+  content: "";
+  background-image: url(../images/casino-1.png);
+  width: 25px;
+  height: 25px;
+
+}
