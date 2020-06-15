@@ -262,6 +262,11 @@
   text-align: center;
   letter-spacing: 0.444444px;
   margin: 27px;
+
+  @media (max-width: 620px) {
+    margin: 12px auto;
+  }
+
 }
 
 .checkbox-text{
@@ -275,6 +280,7 @@
   color: #FFFFFF;
   @media (max-width: 620px) {
     text-align: center;
+    margin: 16px auto 27px auto;
   }
 
 
@@ -324,5 +330,6 @@
   @media (max-width: 620px) {
     width: 272px;
     margin: 16px auto;
+    text-align-last: right;
   }
 }
