@@ -61,7 +61,6 @@
     z-index: 2;
   }
   .teni{
-
     width: 299px;
     height: 340px;
     left: 0px;
@@ -135,6 +134,7 @@
       }
     }
   }
+
   .header__elements-bg{
     max-width: 1754px;
     height: 80%;
@@ -149,12 +149,12 @@
     animation: translating 8s linear infinite;
   }
   @keyframes translating {
-      0%  { transform: translate(0, 5px);}
-      25% { transform: translate(20px, 0);}
-      50% { transform: translate(0px, 40px);}
-      75% { transform: translate(10px, 10px);}
-      100%{ transform: translate(0, 0);}
-    }
+    0%  { transform: translate(0, 5px);}
+    25% { transform: translate(20px, 0);}
+    50% { transform: translate(0px, 40px);}
+    75% { transform: translate(10px, 10px);}
+    100%{ transform: translate(0, 0);}
+  }
 }
 
 .header__btn{
@@ -171,6 +171,7 @@
   letter-spacing: 1.35px;
   color: #FFFFFF;
   margin: 0px auto;
+  cursor: pointer;
 
   @media (max-width: 800px) {
     width: 400px;
@@ -193,30 +194,32 @@
   padding-right: 24px;
   margin: auto;
   display: block;
+  color: white;
+  font-size: 24px;
 
   @media (max-width: 620px) {
     width: 272px;
   }
 }
 
-.header__form input[type="tel"]{
-  width: 219px;
-  height: 64px;
-  background: #09223F;
-  border: 2px solid #366799;
-  box-sizing: border-box;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
-  border-radius: 8px;
-  font-size: 20px;
-  text-align: right;
-  padding-right: 24px;
-  margin: auto;
-  display: inline-block;
+// .header__form input[type="tel"]{
+//   width: 219px;
+//   height: 64px;
+//   background: #09223F;
+//   border: 2px solid #366799;
+//   box-sizing: border-box;
+//   box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+//   border-radius: 8px;
+//   font-size: 20px;
+//   text-align: right;
+//   padding-right: 24px;
+//   margin: auto;
+//   display: inline-block;
 
-  @media (max-width: 620px) {
-    width: 272px;
-  }
-}
+//   @media (max-width: 620px) {
+//     width: 272px;
+//   }
+// }
 
 .header__form input[type="number"]{
   width: 157px;
@@ -236,10 +239,8 @@
     width: 272px;
   }
 }
-.header__form input[type="number"]::after{
-  content: "¶";
 
-}
+
 .header__form input[type="checkbox"]{
   width: 16px;
   height: 16px;
@@ -279,15 +280,49 @@
 
 }
 
-select{
-  width: 100px;
-  height: 100px;
+.form-control{
+  width: 219px;
+  height: 64px;
+  background: #09223F;
+  border: 2px solid #366799;
+  box-sizing: border-box;
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  font-size: 24px;
+  text-align: right;
+  padding-right: 24px;
+  margin: auto;
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+  @media (max-width: 620px) {
+    width: 272px;
+  }
 }
 
-.kiev:after{
-  content: "";
-  background-image: url(../images/casino-1.png);
-  width: 25px;
-  height: 25px;
+.tel{
+  width: 157px;
+  height: 64px;
+  background: #09223F;
+  border: 2px solid #366799;
+  box-sizing: border-box;
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  font-size: 24px;
+  text-align-last: center;
+  padding-right: 24px;
+  margin: auto;
+  display: inline-block;
+  color: white;
+  margin-left: 1%;
 
+  @media (max-width: 800px) {
+    margin-left: 4%;
+  }
+
+  @media (max-width: 620px) {
+    width: 272px;
+    margin: 16px auto;
+  }
 }

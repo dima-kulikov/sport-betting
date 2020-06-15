@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sport Betting</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
+
   </head>
 
   <body>
@@ -22,11 +26,25 @@
       
         <input type="name" placeholder="لماكلا كمسا"  name="name" required>
 <div class="text-first">كب صاخلا فتاهلا مقرو</div>
-        <input type="tel" placeholder="______-____-_____" name="tel" required>
-        <input type="tel" placeholder="+971" name="tel" required>
-        <!-- https://codepen.io/ElmiraMukhamedjanova/pen/LKLELG -->
-      <div class="checkbox-text"> * .اًمﺎﻋ 18 يﺮﻤﻋ ﻦﻣ ﺮﺜﻛأ ﺪﻴﻛﺄﺘﻟاو ﺔﻴﺻﻮﺼﺨﻟا ﺔﺳﺎﻴﺳو 
-      <input type="checkbox" name="screen"  chtcked></div>
+        
+  <input type="text" class="form-control" id="number-field">
+<script>
+        $('#number-field').mask('ZZZ-ZZ-ZZ', {
+          translation: {
+              'Z': {
+                  pattern: /[0-9]/, optional: true
+              }
+          },
+          placeholder: "___ - __ - __"
+      });</script>
+
+      <select class="tel" name="tel" type="tel" id="">
+        <option value=""> +971</option>
+        <option value=""> +972</option>
+        <option value=""> +973</option>
+        </select>
+      <div class="checkbox-text" > * .اًمﺎﻋ 18 يﺮﻤﻋ ﻦﻣ ﺮﺜﻛأ ﺪﻴﻛﺄﺘﻟاو ﺔﻴﺻﻮﺼﺨﻟا ﺔﺳﺎﻴﺳو 
+      <input type="checkbox" name="screen"  chtcked required></div>
 
     <button class="header__btn" > ناهر عض </button>
   </div>
