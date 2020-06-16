@@ -1,8 +1,8 @@
-.header{
+.header {
   width: 100%;
-  height: 666px;  
-  background-image: url(../images/bg.jpg); 
-  background-position: center; 
+  height: 666px;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -11,7 +11,7 @@
     height: 933px;
   }
 
-  .logo{
+  .logo {
     position: absolute;
     width: 240px;
     height: 80px;
@@ -23,21 +23,20 @@
     right: 0;
 
     @media (max-width: 800px) {
-       top: 40px
+      top: 40px;
     }
     @media (max-width: 620px) {
-      top: -250px
-   }
-
+      top: -250px;
+    }
   }
 
-  .header__form{
+  .header__form {
     position: absolute;
     width: 400px;
     height: 376px;
     // left: 35%;
     bottom: 53px;
-    // outline: 2px solid goldenrod; 
+    // outline: 2px solid goldenrod;
     z-index: 20;
     display: flex;
     justify-content: center;
@@ -46,21 +45,19 @@
     right: 0;
 
     @media (max-width: 800px) {
-   
       // width: auto;
-       bottom: 90px;
+      bottom: 90px;
     }
     @media (max-width: 620px) {
       bottom: 105px;
       width: 268px;
     }
+  }
 
-  } 
-
-  form{
+  form {
     z-index: 2;
   }
-  .teni{
+  .teni {
     width: 299px;
     height: 340px;
     left: 0px;
@@ -74,7 +71,7 @@
     }
   }
 
-  .header__piple{
+  .header__piple {
     position: relative;
     margin: 0px auto;
     max-width: 1376px;
@@ -82,17 +79,16 @@
     // outline: 2px solid red;
     bottom: -20px;
     @media (max-width: 800px) {
-     
       position: relative;
     }
     @media (max-width: 620px) {
       bottom: -287px;
     }
 
-    .header__piple__girl-1{
+    .header__piple__girl-1 {
       position: absolute;
       width: 350px;
-      height: 644px; 
+      height: 644px;
       background-image: url(../images/girl_left_1.png);
       background-size: cover;
       z-index: 2;
@@ -111,7 +107,7 @@
       }
     }
 
-    .header__piple__girl-2{
+    .header__piple__girl-2 {
       position: absolute;
       width: 402px;
       height: 633px;
@@ -135,7 +131,7 @@
     }
   }
 
-  .header__elements-bg{
+  .header__elements-bg {
     max-width: 1754px;
     height: 80%;
     position: absolute;
@@ -149,19 +145,34 @@
     animation: translating 8s linear infinite;
   }
   @keyframes translating {
-    0%  { transform: translate(0, 5px);}
-    25% { transform: translate(20px, 0);}
-    50% { transform: translate(0px, 40px);}
-    75% { transform: translate(10px, 10px);}
-    100%{ transform: translate(0, 0);}
+    0% {
+      transform: translate(0, 5px);
+    }
+    25% {
+      transform: translate(20px, 0);
+    }
+    50% {
+      transform: translate(0px, 40px);
+    }
+    75% {
+      transform: translate(10px, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
   }
 }
 
-.header__btn{
+.header__btn {
   display: block;
   width: 385px;
   height: 88px;
-  background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+  background: linear-gradient(
+      89.2deg,
+      #ffdc25 0.14%,
+      rgba(255, 138, 0, 0.73) 99.29%
+    ),
+    #ffd90f;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   font-family: Noto Sans Arabic;
@@ -169,7 +180,7 @@
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 1.35px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0px auto;
   cursor: pointer;
 
@@ -182,13 +193,14 @@
   }
 }
 
-.header__form input[type="name"]{
+.header__form input[type='name'] {
   width: 384px;
   height: 64px;
-  background: #09223F; 
+  background: #09223f;
   border: 2px solid #366799;
   box-sizing: border-box;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15),
+    0px 15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
   text-align: right;
   padding-right: 24px;
@@ -221,13 +233,14 @@
 //   }
 // }
 
-.header__form input[type="number"]{
+.header__form input[type='number'] {
   width: 157px;
   height: 64px;
-  background: #09223F;
+  background: #09223f;
   border: 2px solid #366799;
   box-sizing: border-box;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15),
+    0px 15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
   font-size: 20px;
   text-align: right;
@@ -240,8 +253,7 @@
   }
 }
 
-
-.header__form input[type="checkbox"]{
+.header__form input[type='checkbox'] {
   width: 16px;
   height: 16px;
   margin-left: 12px;
@@ -251,14 +263,13 @@
   }
 }
 
-
-.text-first{
+.text-first {
   font-family: Noto Sans Arabic;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   letter-spacing: 0.444444px;
   margin: 27px;
@@ -266,10 +277,9 @@
   @media (max-width: 620px) {
     margin: 12px auto;
   }
-
 }
 
-.checkbox-text{
+.checkbox-text {
   margin: 16px auto 47px auto;
   text-align: right;
   font-family: Noto Sans Arabic;
@@ -277,22 +287,21 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   @media (max-width: 620px) {
     text-align: center;
     margin: 16px auto 27px auto;
   }
-
-
 }
 
-.form-control{
+.form-control {
   width: 219px;
   height: 64px;
-  background: #09223F;
+  background: #09223f;
   border: 2px solid #366799;
   box-sizing: border-box;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15),
+    0px 15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
   font-size: 24px;
   text-align: right;
@@ -307,13 +316,14 @@
   }
 }
 
-.tel{
+.tel {
   width: 157px;
   height: 64px;
-  background: #09223F;
+  background: #09223f;
   border: 2px solid #366799;
   box-sizing: border-box;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px   15px 12px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15),
+    0px 15px 12px rgba(0, 0, 0, 0.11);
   border-radius: 8px;
   font-size: 24px;
   text-align-last: center;
